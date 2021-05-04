@@ -1,0 +1,535 @@
+/***** Corpo e formatações gerais *****/
+
+body{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    color: #fff;
+}
+
+/* Classe para acultar itens  */
+
+.ocultar-lg{
+    display: none;
+}
+
+/******* Topo e navegação principal ****** */
+
+/* barras */
+
+#barra-1{
+    background: rgba(50, 205, 50, 0.9);
+    width: 100%;
+}
+
+#barra-1 a{
+    color: #fff
+}
+
+/*Itens barra-1 formatações */
+
+#barra-1 .display-4:hover{
+    color: #fff;
+}
+
+.fa-user-circle{
+    font-size: 2.5em;
+    margin: 10px 0 0 0px;
+}
+
+.fa-user-circle:hover{
+    color: #009000;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+.fa-bars{
+    color: #fff;
+    font-size: 1.5em;
+    margin: 5px 0 0 0;
+}
+
+ .fa-bars:hover{
+    color: #009000;
+    transition: color 0.6s;
+    -webkit-transition: color 0.6s;
+    -moz-transition: color 0.6s;
+    -ms-transition: color 0.6s;
+    -o-transition: color 0.6s;
+}
+
+#barra-1 nav a:hover{
+    color: #097507;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+#home .home,
+#dica .dica,
+#noticia .noticia,
+#contato .contato{
+    color: #097507;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a{
+    font-size: 1.5em;
+}
+
+/* ===== Pagina de login ======*/
+
+#login{
+    background: #32cd32;
+}
+
+#login #area-formularios{
+    height: 500px;
+}
+
+#login #area-login{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+#login #area-login h2{
+    color: #32cd32;
+    padding: 15px 0 5px 0;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#login #area-login h2 img{
+    width: 70px;
+    height: 70px;
+}
+
+#login #area-formularios .container form input{
+    margin: 10px 0;
+}
+
+#login #area-login button{
+    background: #32cd32;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* ===== Pagina Home ======= */
+
+/****** Conteudos Home ***** */
+
+/* Conteudo destaque Home */
+
+#home #destaque{
+    background: url("../img/Home/principal.jpg");
+    background-size: auto;
+    background-attachment: fixed; 
+}
+
+/* Carousel home */
+
+#home .fa-chevron-left,
+#home .fa-chevron-right{
+    color: rgba(0, 255, 0, 0.8);
+    font-size: 2em;
+}
+
+#home .carousel-home{
+     width: 100%;
+    height: 500px;
+}
+
+#home #slide-1{
+    background:url("../img/Home/img1-carousel-home.jpg");
+    background-size: 100% 500px;
+}
+
+#home  #slide-2{
+    background: url("../img/Home/img2-carousel-home.jpg");
+    background-size: 100% 500px;
+
+}
+
+#home  #slide-3{
+    background: url('../img/Home/img3-carousel-home.jpg');
+    background-size: 100% 500px;
+}
+
+#home #slide-4{
+    background: url('../img/Home/img4-carousel-home.jpg');
+    background-size: 100% 500px;
+}
+
+#home .conteudo-carousel{
+    background: rgba(0, 255, 0, 0.6);
+    margin-top: 400px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#home .conteudo-carousel h1{
+    line-height: 100px;
+}
+
+
+/* Conteudos principais*/
+
+/* Principal */
+
+#home .noticia-home{
+    display: flex;
+    border-bottom: 2px solid #f2f2f2;
+    
+}
+
+#home .noticia-home img{
+    width: 370px;
+    height: 285px;
+    margin: 10px 0;
+}
+
+#home .noticia-home h3{
+    margin: 50px 0 0 20px;
+    color: #32cd32;
+
+}
+
+#home .noticia-home p{
+    font-size: 1.3em;
+    margin:  0 0 0 20px;
+}
+
+/* Videos conteudo principal */
+
+#home #area-videos h2{
+    color: #32cd32;
+    font-size: 2.3em;
+    margin: 15px 0;
+}
+
+#home #area-videos iframe{
+    width: 50%;
+    height: 300px;
+    margin: 10px 0;
+    margin-right: 10px;
+}
+
+
+
+/* Lateral */
+
+#home #conteudo-lateral-home{
+    background: #32cd32;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+#home #conteudo-lateral-home .input-group-append .btn{
+    background: #008000; 
+}
+
+#home #conteudo-lateral-home span{
+    color: #fff;
+    font-size: 1.5em;
+    border-bottom: 3px solid #008000;
+    padding-bottom: 5px;
+}
+
+#home #conteudo-lateral-home p{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 30px 0 30px 0;
+}
+
+#home #conteudo-lateral-home iframe{
+    margin-top: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 30px auto;
+}
+
+#home #conteudo-lateral-home #area-icones-lateral h4{
+    color: #fff;
+}
+
+#home #conteudo-lateral-home #area-icones-lateral #Icones-area-lateral{
+    display: flex;
+    justify-content: center;
+}
+
+#home #conteudo-lateral-home #area-icones-lateral #Icones-area-lateral i{
+    color:  #fff;
+    font-size: 2.2em;
+    margin: 10px 20px;
+    background: #008000;
+    padding: 10px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+#home #conteudo-lateral-home #area-icones-lateral #Icones-area-lateral i:hover{
+    color: #006400;
+    background: #32cd32;
+    transition: color 0.5s, background 0.9s;
+    -webkit-transition: color 0.5s, background 0.9s;
+    -moz-transition: color 0.5s, background 0.9s;
+    -ms-transition: color 0.5s, background 0.9s;
+    -o-transition: color 0.5s, background 0.9s;
+}
+
+
+/* ----- Rodape ------ */
+
+footer{
+    margin-top: 150px;
+    color: #fff;
+}
+
+/* Area 1 */
+
+footer #area-1-rodape{
+    background: #32cd32;
+    color: #fff;
+}
+
+footer #area-1-rodape section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer #area-1-rodape .fa-leaf{
+    color: #006400;
+    font-size: 2em;
+}
+
+footer h4{
+    margin: 0 0 20px 0;
+}
+
+footer #area-redes-sociais{
+    display: inline;
+}
+
+footer #area-1-rodape a{
+    color: #fff;
+    padding: 2px 0;
+    margin: 2px 0;
+    font-size: 1.1em;
+    display: inline;
+}
+
+footer #area-1-rodape section.col-md-3 a:hover{
+    text-decoration: underline;
+}
+
+footer #area-1-rodape section.col-md-4 a{
+    font-size: 1.5em;
+    background: #097507;
+    padding: 10px 15px;
+    margin: 0 10px 0 0;
+    border-radius:100px;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    -ms-border-radius:100px;
+    -o-border-radius:100px;
+}
+
+footer #area-1-rodape section.col-md-4 a:hover{
+    color: #006400;
+    background: #32cd32;
+    transition: color 0.5s, background 0.9s;
+    -webkit-transition: color 0.5s, background 0.9s;
+    -moz-transition: color 0.5s, background 0.9s;
+    -ms-transition: color 0.5s, background 0.9s;
+    -o-transition: color 0.5s, background 0.9s;
+}
+
+
+/* Area 2 */
+
+footer #area-2-rodape{
+    background: #008000;
+}
+
+footer #area-2-rodape h4{
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+}
+
+
+
+/* Moblie */
+
+@media (max-width: 767.98px){
+
+     .ocultar-sm{
+        display: none;
+    }
+
+    /* Topo responsivo */
+
+    #barra-1 .display-4{
+        font-size: 2.3em;
+    }
+
+    #barra-1  .fa-user-circle{
+        color: #fff;
+        font-size: 2em;
+        margin: 5px 0 0 0px;
+    } 
+
+/* ====== Pagina login ===== */
+    #login #area-formularios{
+        width: 100%;
+    }
+
+    #login #area-formularios .container h2{
+        font-size: 2em;
+    }
+
+/* ===== Pagina Home ====== */
+
+/* Conteudos responsivo */
+
+/* Destaque */
+
+   #home #destaque .display-3{
+        font-size: 3.5em;
+    }
+
+/* Carousel home  */
+
+    #home .fa-chevron-left,
+    #home .fa-chevron-right{
+        font-size: 1.5em;
+    }
+
+    #home .carousel-home{
+        height: 250px;
+        width: 100%;
+    }
+
+    #home #slide-1,
+    #home #slide-2,
+    #home #slide-3,
+    #home #slide-4{
+        background-size: 100% 100%;
+    }
+
+    #home .conteudo-carousel{
+        width: 100%;
+        height: 50px;
+        margin: 200px 0 0 0;
+    }
+
+    #home .conteudo-carousel h1{
+        line-height: 50px;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    /* Conteudos */
+
+    /* Conteudo principal */
+
+    /* noticia */
+
+    #home .noticia-home{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    #home .noticia-home img{
+        margin:  0;
+        width: 100%;
+        height: 250px;
+    }
+
+    #home .noticia-home h3{
+        margin: 10px 0 5px 10px;
+    }
+
+    #home .noticia-home p{
+        margin: 5px 0 20px 10px;
+
+    }
+
+    /* videos */
+
+    #home #area-videos h2{
+        font-size: 1.4em;
+    }
+
+    #home #area-videos div{
+        flex-direction: column;
+    }
+
+    #home #area-videos iframe{
+        width: 100%;
+        height: 250px; 
+    }
+
+    /* Rodape */
+
+    footer{
+        margin-top: 15px;
+    }
+
+    footer #area-redes-sociais{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #area-redes-sociais a{
+        margin-bottom: 200px;
+    }
+
+    footer #area-2-rodape h4{
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+
+
+/* Formatações gerais  */
+
+.sem-borda{
+    border: none;
+}
+
