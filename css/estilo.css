@@ -1,5 +1,9 @@
 /***** Corpo e formatações gerais *****/
 
+:root{
+    --verdePrincipal: #32cd32
+}
+
 body{
     font-size: 16px;
 }
@@ -95,47 +99,7 @@ nav ul li a{
     font-size: 1.5em;
 }
 
-/* ===== Pagina de login ======*/
 
-#login{
-    background: #32cd32;
-}
-
-#login #area-formularios{
-    height: 500px;
-}
-
-#login #area-login{
-    width: 50%;
-    background-color: #fff;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-}
-
-#login #area-login h2{
-    color: #32cd32;
-    padding: 15px 0 5px 0;
-    text-align: center;
-    font-size: 2.5em;
-}
-
-#login #area-login h2 img{
-    width: 70px;
-    height: 70px;
-}
-
-#login #area-formularios .container form input{
-    margin: 10px 0;
-}
-
-#login #area-login button{
-    background: #32cd32;
-    margin: 20px 0;
-    color: #fff;
-}
 
 /* ===== Pagina Home ======= */
 
@@ -149,52 +113,7 @@ nav ul li a{
     background-attachment: fixed; 
 }
 
-/* Carousel home */
 
-#home .fa-chevron-left,
-#home .fa-chevron-right{
-    color: rgba(0, 255, 0, 0.8);
-    font-size: 2em;
-}
-
-#home .carousel-home{
-     width: 100%;
-    height: 500px;
-}
-
-#home #slide-1{
-    background:url("../img/Home/img1-carousel-home.jpg");
-    background-size: 100% 500px;
-}
-
-#home  #slide-2{
-    background: url("../img/Home/img2-carousel-home.jpg");
-    background-size: 100% 500px;
-
-}
-
-#home  #slide-3{
-    background: url('../img/Home/img3-carousel-home.jpg');
-    background-size: 100% 500px;
-}
-
-#home #slide-4{
-    background: url('../img/Home/img4-carousel-home.jpg');
-    background-size: 100% 500px;
-}
-
-#home .conteudo-carousel{
-    background: rgba(0, 255, 0, 0.6);
-    margin-top: 400px;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-#home .conteudo-carousel h1{
-    line-height: 100px;
-}
 
 
 /* Conteudos principais*/
@@ -203,7 +122,7 @@ nav ul li a{
 
 #home .noticia-home{
     display: flex;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid #d9d9d9;
     
 }
 
@@ -215,7 +134,7 @@ nav ul li a{
 
 #home .noticia-home h3{
     margin: 50px 0 0 20px;
-    color: #32cd32;
+    color: var(--verdePrincipal);
 
 }
 
@@ -227,7 +146,7 @@ nav ul li a{
 /* Videos conteudo principal */
 
 #home #area-videos h2{
-    color: #32cd32;
+    color: var(--verdePrincipal);
     font-size: 2.3em;
     margin: 15px 0;
 }
@@ -244,12 +163,12 @@ nav ul li a{
 /* Lateral */
 
 #home #conteudo-lateral-home{
-    background: #32cd32;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+    background: var(--verdePrincipal);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 
 #home #conteudo-lateral-home .input-group-append .btn{
@@ -303,7 +222,7 @@ nav ul li a{
 
 #home #conteudo-lateral-home #area-icones-lateral #Icones-area-lateral i:hover{
     color: #006400;
-    background: #32cd32;
+    background: var(--verdePrincipal);
     transition: color 0.5s, background 0.9s;
     -webkit-transition: color 0.5s, background 0.9s;
     -moz-transition: color 0.5s, background 0.9s;
@@ -322,7 +241,7 @@ footer{
 /* Area 1 */
 
 footer #area-1-rodape{
-    background: #32cd32;
+    background: var(--verdePrincipal);
     color: #fff;
 }
 
@@ -341,7 +260,8 @@ footer h4{
 }
 
 footer #area-redes-sociais{
-    display: inline;
+    display: flex;
+    flex-direction: column;
 }
 
 footer #area-1-rodape a{
@@ -370,7 +290,7 @@ footer #area-1-rodape section.col-md-4 a{
 
 footer #area-1-rodape section.col-md-4 a:hover{
     color: #006400;
-    background: #32cd32;
+    background: var(--verdePrincipal);
     transition: color 0.5s, background 0.9s;
     -webkit-transition: color 0.5s, background 0.9s;
     -moz-transition: color 0.5s, background 0.9s;
@@ -474,6 +394,7 @@ footer #area-2-rodape h4{
         border-bottom: 2px solid #f2f2f2;
     }
 
+
     #home .noticia-home img{
         margin:  0;
         width: 100%;
@@ -516,9 +437,6 @@ footer #area-2-rodape h4{
         text-align: center;
     }
 
-    footer #area-redes-sociais a{
-        margin-bottom: 200px;
-    }
 
     footer #area-2-rodape h4{
         margin: 0 auto;
@@ -532,4 +450,3 @@ footer #area-2-rodape h4{
 .sem-borda{
     border: none;
 }
-
